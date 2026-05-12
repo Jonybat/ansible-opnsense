@@ -142,6 +142,7 @@
     - "configctl interface invoke registration"
     - "configctl template reload OPNsense/Wireguard"
     - "configctl wireguard configure"
+    - "pluginctl -s wireguard restart"
   when:
     - config is defined
     - config.changed | bool
