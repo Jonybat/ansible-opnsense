@@ -82,7 +82,7 @@ or
 
 ### optional
 
-    sudo apt install secure-delete php-cli php-xml ldb-tools samba-dsdb-modules python3-passlib 'bcrypt==4.1.2' # (optional)
+    sudo apt install secure-delete php-cli php-xml ldb-tools samba-dsdb-modules python3-passlib python3-bcrypt # (optional)
 
 `php-cli` and `php-xml` are required for the xml re-encoding (recommended! set `opn_fix_xml_encoding: true`)
 
@@ -90,6 +90,8 @@ or
 (set `opn_sync_users_from_ldap: true` and configure the required VARs `opn_sync_users_ldap_*`)
 
 `secure-delete` is required for safe deleting the local xml file.
+
+If you prefer pip, use `pip install passlib 'bcrypt==4.1.2'`
 
 ## Example Playbook
 
