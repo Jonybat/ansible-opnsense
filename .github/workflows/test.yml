@@ -19,7 +19,7 @@ jobs:
           - pinned ansible
         include:
           - ansible: latest ansible
-            pip3deps: ansible lxml cryptography passlib bcrypt
+            pip3deps: ansible lxml cryptography passlib bcrypt<5
           - ansible: pinned ansible
             pip3deps: ansible==11.13.0 ansible-core==2.18.17 lxml cryptography passlib bcrypt==4.0.1
     steps:
