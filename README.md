@@ -82,7 +82,7 @@ or
 
 ### optional
 
-    sudo apt install secure-delete php-cli php-xml ldb-tools samba-dsdb-modules python3-passlib bcrypt # (optional)
+    sudo apt install secure-delete php-cli php-xml ldb-tools samba-dsdb-modules python3-passlib 'bcrypt<5' # (optional)
 
 `php-cli` and `php-xml` are required for the xml re-encoding (recommended! set `opn_fix_xml_encoding: true`)
 
