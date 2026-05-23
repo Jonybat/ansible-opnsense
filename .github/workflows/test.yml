@@ -27,7 +27,7 @@ jobs:
       - name: set up python
         uses: actions/setup-python@v2
         with:
-          python-version: 3.11
+          python-version: 3.13.5  # w/ 3.9 we can not install ansible >= 13
       - name: install requirements
         run: |
           python -m pip install --upgrade pip
